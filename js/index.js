@@ -5,7 +5,6 @@ console.log(thisYear);
 
 //DOM
 const footer = document.querySelector("footer");
-footer.style.backgroundColor = "pink";
 
 let copyRight = document.createElement("p");
 copyRight.innerHTML = "Juliette " + thisYear;
@@ -51,11 +50,11 @@ newMessage.innerHTML = //anadir otro elementos que son de html
 console.log(newMessage);
 
 let removeButton = document.createElement("button");
-removeButton.innerText = "remove";
-removeButton.setAttribute("type", "button");
+removeButton.innerText = " remove ";
+removeButton.setAttribute("type", " button ");
 console.log(removeButton);
 
-removeButton.addEventListener("click", (event) => {
+removeButton.addEventListener(" click ", (event) => {
   let entry = removeButton.parentNode;
   entry.parentNode.removeChild(entry);
 });
