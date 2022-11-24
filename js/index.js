@@ -63,3 +63,18 @@ newMessage.appendChild(removeButton);
 console.log(newMessage);
 
 messageList.appendChild(newMessage);
+
+let githubRequest = new XMLHttpRequest();
+let url = "https://api.github.com/users/JULIETTESMC/repos";
+githubRequest.open("GET", url);
+githubRequest.send();
+githubRequest.addEventListener("load", () => {
+  let repositories = JSON.parse(githubRequest.responseText);
+  let projectSection = document.getElementById("projects"); //selects element with 'project id'
+  let projectList = projectSection.querySelector("ul"); //selects ul element within 'project id' element
+  for (let i = 0; i < repositories.length; i++) {
+    let project = document.createElement("li"); //creates li element and assigns it to 'project variable'
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
+});
