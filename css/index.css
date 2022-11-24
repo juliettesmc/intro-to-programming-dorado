@@ -15,11 +15,11 @@ h2 {
 }
 
 .two {
-  width: 5%;
+  width: 10%;
   height: 50px;
   background: rgb(253, 213, 241);
-  margin: 20px 20px;
-  padding: 28px;
+  margin: 30px 30px;
+  padding: 48px;
   border: 2px solid rgb(237, 159, 216);
   display: inline-block;
 }
