@@ -1,27 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
+
 body {
-  background: url(/imagenes/logo.JPG);
+  background:#d6b9fc;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:'Poppins',sans-serif;
   font-size: large;
 }
-h1 {
+.title {
   color: black;
+  display: flex;
+  justify-content: center;
 }
 h2 {
   color: blueviolet;
   font-size: x-large;
 }
-/* .two {
-  width: 6%;
-  height: 20px;
-  background: rgb(253, 213, 241);
-  margin: 10px 10px;
-  padding: 110px;
-  border: 4px solid rgb(237, 159, 216);
-  display: inline-block;
-} */
+
 .tree {
   color: black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -57,9 +53,7 @@ header {
   display: flex;
   justify-content: center;
 }
-.menu {
-  width: 990px;
-}
+
 img {
   width: 120px;
   height: auto;
@@ -87,13 +81,8 @@ nav ul li a {
 .navlist {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
 }
-li a.menu,
-li a:hover {
-  background: rgb(237, 159, 216);
-  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
+
 .flex {
   line-height: 25px;
   border: 1px solid whitesmoke;
@@ -115,32 +104,23 @@ li a:hover {
   margin: 15px 15px;
   border: 4px solid rgb(237, 159, 216);
 }
-.social a {
-  display: inline-flex;
-  color: white;
-  align-items: center;
-  min-height: 0vh;
-  justify-content: center;
-  display: inline;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  text-decoration: none;
-  border-radius: 50px;
-  margin: 0, 6px;
-  transition: transform 0, 4s;
-}
-.social a:hover {
-  transform: scale(1, 3);
-}
-.social a.linkedin {
-  background: color #3c70a3;
-}
-.social a.instagram {
-  background: color #bb7171;
-}
-.social a.google {
-  background: color #ee4540;
-}
 @media screen and (max-width: 600px) {
+}
+.navList-item{
+padding: 20px;
+color: black;
+margin-right: 20px;
+}
+.navList-item:hover{
+  background: black;
+  color: #d6b9fc;
+}
+.nav-link{
+  color: inherit;
+}
+.menu{
+  display: grid;
+  gap: 8px;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
 }
